@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CONSOLIDACIÓN M4</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body onload="asignarEventos()">
+
+   <div class="container">
+        <div class="row">
+            <div class="col-md-12 losTitulos">
+                <h1> BUDGET APP</h1>
+            </div><br><hr>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 fondoPresupuesto">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="txtPresupuesto" class="form-label">Enter your budget:</label>
+                                              <input type="text" class="form-control" id="txtPresupuesto" aria-describedby="presupuestoHelp">
+                                              <div id="presupuestoHelp" class="form-text"> Do not enter negative digits </div>
+                                            </div>
+
+
+                                            <button id="btnCalcular" type="button" class="btn btn-outline-success">Calculate </button>
+                                          </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 fondoGasto">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="txtNombreGasto" class="form-label"> Enter the name of the expense:</label>
+                                              <input type="text" class="form-control" id="txtNombreGasto" aria-describedby="nombreGastoHelp">
+                                              <div id="nombreGastoHelp" class="form-text"> Use a clear name</div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="txtCantidadGasto" class="form-label"> Enter the amount of the expense:</label>
+                                                <input type="text" class="form-control" id="txtCantidadGasto" aria-describedby="cantidadGastoHelp">
+                                                <div id="cantidadGastoHelp" class="form-text"> Do not enter negative digits </div>
+                                              </div>
+
+
+                                            <button id="btnAnadirGasto" type="button" class="btn btn-outline-danger">Add Expense</button>
+                                          </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 fondoRegistro1">
+                                        <div class="container">
+                                         
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p> Budget </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p> Expenses </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p> Balance </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p id="parrafoPresupuesto">0</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafoGasto">$0</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafoSaldo">$0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 fondoRegistro2">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p> Expense </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>Value</p>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <p>Action</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p id="parrafoNombreGasto"></p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafoValor"></p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <p id="parrafoAccion"></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div> 
+            </div>
+        </div>
+   </div> 
+    <script src="assets/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

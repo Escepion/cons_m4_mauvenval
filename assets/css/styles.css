@@ -1,0 +1,59 @@
+body {
+    background-image: url(../../assets/img/scale.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: bottom;
+}
+
+.losTitulos{
+    color: goldenrod;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    
+}
+
+.fondoPresupuesto{
+    
+    border: 5px solid greenyellow;
+    border-radius: 12px;
+    margin-bottom:2%;
+    background-color: rgba(104, 181, 87, 0.684);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.fondoGasto{
+    border: 5px solid rgb(139, 87, 87);
+    border-radius: 12px;
+    margin-top: 2%;
+    background-color: rgba(204, 69, 69, 0.897);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.fondoRegistro1{
+    border: 5px solid yellowgreen;
+    border-radius: 12px;
+    margin-bottom:2%;
+    background-color: rgba(168, 200, 71, 0.789);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.fondoRegistro2{
+    
+    border: 5px solid blueviolet;
+    border-radius: 12px;
+    margin-top:2%;
+    background-color: rgba(70, 160, 220, 0.2);
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+#btnAnadirGasto{
+    background-color: orange;
+}
